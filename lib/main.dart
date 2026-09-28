@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'features/home/home_screen.dart';
 
 void main() {
   runApp(const NoteReminderApp());
@@ -19,33 +20,6 @@ class NoteReminderApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'NoteReminder',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-      body: const Center(
-        child: Text(
-          'Never forget what matters.',
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.w600,
-          ),
-        ),
-      ),
     );
   }
 }
